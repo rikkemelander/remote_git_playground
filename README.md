@@ -8,8 +8,6 @@ Try running the following commands:
 - dbt test
 - hest
 - fest
-- test
-- best
 
 ### Resources:
 
