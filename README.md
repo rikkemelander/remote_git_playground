@@ -9,6 +9,7 @@ Try running the following commands:
 - hest
 - fest
 - test
+- best
 
 ### Resources:
 
