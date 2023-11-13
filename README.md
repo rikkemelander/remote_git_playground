@@ -7,6 +7,7 @@ Try running the following commands:
 - dbt run
 - dbt test
 - hest
+- zest
 
 ### Resources:
 
