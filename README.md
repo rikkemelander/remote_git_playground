@@ -8,7 +8,6 @@ Try running the following commands:
 - dbt test
 - hest
 - zest
-- ko
 
 ### Resources:
 
