@@ -1,1 +1,1 @@
-select * from {{ source('wayfare', 'staging__source_productsubcategories') }}
+select * from {{ source('wayfare', 'staging__source_productcategories') }}
