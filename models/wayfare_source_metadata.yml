@@ -8,32 +8,14 @@ sources:
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
-      - name: staging__source_products
+      - name: sourcepg__source__productcategories
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: staging__productkey
+          - name: productcategorykey
             tags: []
-          - name: staging__productsubcategorykey
-            tags: []
-          - name: staging__productsku
-            tags: []
-          - name: staging__productname
-            tags: []
-          - name: staging__modelname
-            tags: []
-          - name: staging__productdescription
-            tags: []
-          - name: staging__productcolor
-            tags: []
-          - name: staging__productsize
-            tags: []
-          - name: staging__productstyle
-            tags: []
-          - name: staging__productcost
-            tags: []
-          - name: staging__productprice
+          - name: categoryname
             tags: []
           - name: _wayfare_created_at
             description: The transaction time at which the row was created by Wayfare
@@ -41,14 +23,32 @@ sources:
           - name: _wayfare_updated_at
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
-      - name: staging__source_productcategories
+      - name: sourcepg__source__products
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: staging__productcategorykey
+          - name: productkey
             tags: []
-          - name: staging__categoryname
+          - name: productsubcategorykey
+            tags: []
+          - name: productsku
+            tags: []
+          - name: productname
+            tags: []
+          - name: modelname
+            tags: []
+          - name: productdescription
+            tags: []
+          - name: productcolor
+            tags: []
+          - name: productsize
+            tags: []
+          - name: productstyle
+            tags: []
+          - name: productcost
+            tags: []
+          - name: productprice
             tags: []
           - name: _wayfare_created_at
             description: The transaction time at which the row was created by Wayfare
@@ -56,16 +56,16 @@ sources:
           - name: _wayfare_updated_at
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
-      - name: staging__source_productsubcategories
+      - name: sourcepg__source__productsubcategories
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: staging__productsubcategorykey
+          - name: productsubcategorykey
             tags: []
-          - name: staging__subcategoryname
+          - name: subcategoryname
             tags: []
-          - name: staging__productcategorykey
+          - name: productcategorykey
             tags: []
           - name: _wayfare_created_at
             description: The transaction time at which the row was created by Wayfare
