@@ -8,7 +8,7 @@
 
 {{ config(materialized='view') }}
 
-select * from {{ source('wayfare', 'staging__source_productcategories') }}
+select * from {{ source('my', 'staging__categoryname') }}
 
 /*
     Uncomment the line below to remove records with null `id` values
