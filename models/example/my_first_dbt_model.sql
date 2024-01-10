@@ -8,7 +8,7 @@
 
 {{ config(materialized='view') }}
 
-select * from {{ source('my', 'staging__categoryname') }}
+select * from {{ ref('my_second_dbt_model') }}
 
 /*
     Uncomment the line below to remove records with null `id` values
