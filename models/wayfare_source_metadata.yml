@@ -1,0 +1,122 @@
+# THIS FILE IS AUTO GENERATED. DO NOT MODIFY
+version: 2
+sources:
+  - name: wayfare
+    description: source
+    database: postgres
+    schema: source
+    loader: wayfare
+    loaded_at_field: _wayfare_updated_at
+    tables:
+      - name: products
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: productcost
+            tags: []
+          - name: productprice
+            tags: []
+          - name: productstyle
+            tags: []
+          - name: productkey
+            tags: []
+          - name: productsubcategorykey
+            tags: []
+          - name: productsku
+            tags: []
+          - name: productname
+            tags: []
+          - name: modelname
+            tags: []
+          - name: productdescription
+            tags: []
+          - name: productcolor
+            tags: []
+          - name: productsize
+            tags: []
+      - name: productcategories
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: productcategorykey
+            tags: []
+          - name: categoryname
+            tags: []
+      - name: productsubcategories
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: productsubcategorykey
+            tags: []
+          - name: subcategoryname
+            tags: []
+          - name: productcategorykey
+            tags: []
+      - name: staging__source_products
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: staging__productsubcategorykey
+            tags: []
+          - name: staging__productsku
+            tags: []
+          - name: staging__productname
+            tags: []
+          - name: staging__modelname
+            tags: []
+          - name: staging__productdescription
+            tags: []
+          - name: staging__productcolor
+            tags: []
+          - name: staging__productsize
+            tags: []
+          - name: staging__productstyle
+            tags: []
+          - name: staging__productcost
+            tags: []
+          - name: staging__productprice
+            tags: []
+          - name: staging__productkey
+            tags: []
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: staging__source_productcategories
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: staging__productcategorykey
+            tags: []
+          - name: staging__categoryname
+            tags: []
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: staging__source_productsubcategories
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: staging__productsubcategorykey
+            tags: []
+          - name: staging__subcategoryname
+            tags: []
+          - name: staging__productcategorykey
+            tags: []
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
