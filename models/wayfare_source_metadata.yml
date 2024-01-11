@@ -3,73 +3,73 @@ version: 2
 sources:
   - name: wayfare
     description: source
-    database: postgres
-    schema: warehouse
+    database: INTEGRATION_TEST_DB
+    schema: RMEL
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
-      - name: sourcepg__source__productcategories
+      - name: SOURCEPG__SOURCE__PRODUCTS
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: productcategorykey
+          - name: PRODUCTKEY
             tags: []
-          - name: categoryname
+          - name: PRODUCTSUBCATEGORYKEY
             tags: []
-          - name: _wayfare_created_at
+          - name: PRODUCTSKU
+            tags: []
+          - name: PRODUCTNAME
+            tags: []
+          - name: MODELNAME
+            tags: []
+          - name: PRODUCTDESCRIPTION
+            tags: []
+          - name: PRODUCTCOLOR
+            tags: []
+          - name: PRODUCTSIZE
+            tags: []
+          - name: PRODUCTSTYLE
+            tags: []
+          - name: PRODUCTCOST
+            tags: []
+          - name: PRODUCTPRICE
+            tags: []
+          - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
             tags: []
-          - name: _wayfare_updated_at
+          - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
-      - name: sourcepg__source__products
+      - name: SOURCEPG__SOURCE__PRODUCTCATEGORIES
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: productkey
+          - name: PRODUCTCATEGORYKEY
             tags: []
-          - name: productsubcategorykey
+          - name: CATEGORYNAME
             tags: []
-          - name: productsku
-            tags: []
-          - name: productname
-            tags: []
-          - name: modelname
-            tags: []
-          - name: productdescription
-            tags: []
-          - name: productcolor
-            tags: []
-          - name: productsize
-            tags: []
-          - name: productstyle
-            tags: []
-          - name: productcost
-            tags: []
-          - name: productprice
-            tags: []
-          - name: _wayfare_created_at
+          - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
             tags: []
-          - name: _wayfare_updated_at
+          - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
-      - name: sourcepg__source__productsubcategories
+      - name: SOURCEPG__SOURCE__PRODUCTSUBCATEGORIES
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: productsubcategorykey
+          - name: PRODUCTSUBCATEGORYKEY
             tags: []
-          - name: subcategoryname
+          - name: SUBCATEGORYNAME
             tags: []
-          - name: productcategorykey
+          - name: PRODUCTCATEGORYKEY
             tags: []
-          - name: _wayfare_created_at
+          - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
             tags: []
-          - name: _wayfare_updated_at
+          - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
             tags: []

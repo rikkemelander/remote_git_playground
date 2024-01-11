@@ -1,2 +1,3 @@
 {{ config(materialized='view') }}
-select * from {{ source('wayfare', 'sourcepg__source__productcategories') }}
+select *
+from {{ source('wayfare', 'SOURCEPG__SOURCE__PRODUCTCATEGORIES') }}
