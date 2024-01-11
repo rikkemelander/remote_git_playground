@@ -1,3 +1,3 @@
 {{ config(materialized='view') }}
 select *
-from {{ ref('HIQOEWRKLWEKQHRKLWEHRLKWETHLKWQERHKLHWREKQLEWRHWEQRKRLEHKWQ') }}
+from {{ ref('a') }}
