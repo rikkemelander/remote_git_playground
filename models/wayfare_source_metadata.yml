@@ -8,6 +8,112 @@ sources:
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
+      - name: A
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: CATEGORYNAME
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            tags: []
+      - name: A__SOURCE__PRODUCTCATEGORIES
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: CATEGORYNAME
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: A__SOURCE__PRODUCTS
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTKEY
+            tags: []
+          - name: PRODUCTSUBCATEGORYKEY
+            tags: []
+          - name: PRODUCTSKU
+            tags: []
+          - name: PRODUCTNAME
+            tags: []
+          - name: MODELNAME
+            tags: []
+          - name: PRODUCTDESCRIPTION
+            tags: []
+          - name: PRODUCTCOLOR
+            tags: []
+          - name: PRODUCTSIZE
+            tags: []
+          - name: PRODUCTSTYLE
+            tags: []
+          - name: PRODUCTCOST
+            tags: []
+          - name: PRODUCTPRICE
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: A__SOURCE__PRODUCTSUBCATEGORIES
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTSUBCATEGORYKEY
+            tags: []
+          - name: SUBCATEGORYNAME
+            tags: []
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: HIQOEWRKLWEKQHRKLWEHRLKWETHLKWQERHKLHWREKQLEWRHWEQRKRLEHKWQ
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: CATEGORYNAME
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            tags: []
+      - name: SOURCEPG__SOURCE__PRODUCTCATEGORIES
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: CATEGORYNAME
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
       - name: SOURCEPG__SOURCE__PRODUCTS
         description: ''
         loaded_at_field: _wayfare_updated_at
@@ -41,7 +147,83 @@ sources:
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
-      - name: SOURCEPG__SOURCE__PRODUCTCATEGORIES
+      - name: SOURCEPG__SOURCE__PRODUCTSUBCATEGORIES
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTSUBCATEGORYKEY
+            tags: []
+          - name: SUBCATEGORYNAME
+            tags: []
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: VIEW_PRODUCTS
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: CATEGORYNAME
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            tags: []
+      - name: VIEW_VIEW_PRODUCTS
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: CATEGORYNAME
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            tags: []
+      - name: PGSOURCE__SOURCE__PRODUCTS
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTKEY
+            tags: []
+          - name: PRODUCTSUBCATEGORYKEY
+            tags: []
+          - name: PRODUCTSKU
+            tags: []
+          - name: PRODUCTNAME
+            tags: []
+          - name: MODELNAME
+            tags: []
+          - name: PRODUCTDESCRIPTION
+            tags: []
+          - name: PRODUCTCOLOR
+            tags: []
+          - name: PRODUCTSIZE
+            tags: []
+          - name: PRODUCTSTYLE
+            tags: []
+          - name: PRODUCTCOST
+            tags: []
+          - name: PRODUCTPRICE
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: PGSOURCE__SOURCE__PRODUCTCATEGORIES
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
@@ -56,7 +238,7 @@ sources:
           - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
-      - name: SOURCEPG__SOURCE__PRODUCTSUBCATEGORIES
+      - name: PGSOURCE__SOURCE__PRODUCTSUBCATEGORIES
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []

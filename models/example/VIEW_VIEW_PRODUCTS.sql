@@ -1,3 +1,3 @@
 {{ config(materialized='view') }}
 select *
-from {{ ref('a') }}
+from {{ ref('VIEW_PRODUCTS') }}
