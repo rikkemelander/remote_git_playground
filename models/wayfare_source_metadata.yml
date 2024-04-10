@@ -1,257 +1,1197 @@
 # THIS FILE IS AUTO GENERATED. DO NOT MODIFY
 version: 2
 sources:
-  - name: wayfare
+  - database: postgres
+    name: wayfare
     description: source
-    database: INTEGRATION_TEST_DB
-    schema: RMEL
+    schema: warehouse
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
-      - name: A
+      - name: _prisma_migrations
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTCATEGORYKEY
+          - name: applied_steps_count
             tags: []
-          - name: CATEGORYNAME
+          - name: checksum
             tags: []
-          - name: _WAYFARE_CREATED_AT
+          - name: finished_at
             tags: []
-          - name: _WAYFARE_UPDATED_AT
+          - name: id
             tags: []
-      - name: A__SOURCE__PRODUCTCATEGORIES
+          - name: logs
+            tags: []
+          - name: migration_name
+            tags: []
+          - name: rolled_back_at
+            tags: []
+          - name: started_at
+            tags: []
+      - name: account
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTCATEGORYKEY
+          - name: disabled
             tags: []
-          - name: CATEGORYNAME
+          - name: id
             tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
+          - name: org_id
             tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
+          - name: role
+            description: 'Original type was the enum: account_role'
             tags: []
-      - name: A__SOURCE__PRODUCTS
+      - name: activation
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTKEY
+          - name: archived
             tags: []
-          - name: PRODUCTSUBCATEGORYKEY
+          - name: archived_date
             tags: []
-          - name: PRODUCTSKU
+          - name: connection_id
             tags: []
-          - name: PRODUCTNAME
+          - name: created_by_id
             tags: []
-          - name: MODELNAME
+          - name: created_date
             tags: []
-          - name: PRODUCTDESCRIPTION
+          - name: data_set_id
             tags: []
-          - name: PRODUCTCOLOR
+          - name: dataset
             tags: []
-          - name: PRODUCTSIZE
+          - name: description
             tags: []
-          - name: PRODUCTSTYLE
+          - name: documentation
             tags: []
-          - name: PRODUCTCOST
+          - name: field_mapping
             tags: []
-          - name: PRODUCTPRICE
+          - name: id
             tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
+          - name: markdown_documentation
             tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
+          - name: name
             tags: []
-      - name: A__SOURCE__PRODUCTSUBCATEGORIES
+          - name: org_id
+            tags: []
+          - name: target_dataset_name
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: activation_jobs
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTSUBCATEGORYKEY
+          - name: activation_id
             tags: []
-          - name: SUBCATEGORYNAME
+          - name: is_latest_job
             tags: []
-          - name: PRODUCTCATEGORYKEY
+          - name: job_id
             tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
+          - name: org_id
             tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
-            tags: []
-      - name: HIQOEWRKLWEKQHRKLWEHRLKWETHLKWQERHKLHWREKQLEWRHWEQRKRLEHKWQ
+      - name: activation_metadata
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTCATEGORYKEY
+          - name: connection_id
             tags: []
-          - name: CATEGORYNAME
+          - name: created_by_id
             tags: []
-          - name: _WAYFARE_CREATED_AT
+          - name: created_date
             tags: []
-          - name: _WAYFARE_UPDATED_AT
+          - name: id
             tags: []
-      - name: SOURCEPG__SOURCE__PRODUCTCATEGORIES
+          - name: org_id
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: audit
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTCATEGORYKEY
+          - name: account_id
             tags: []
-          - name: CATEGORYNAME
+          - name: date
             tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
+          - name: event_details
             tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
+          - name: event_type
             tags: []
-      - name: SOURCEPG__SOURCE__PRODUCTS
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: communication_channel
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTKEY
+          - name: created_by_id
             tags: []
-          - name: PRODUCTSUBCATEGORYKEY
+          - name: created_date
             tags: []
-          - name: PRODUCTSKU
+          - name: details
             tags: []
-          - name: PRODUCTNAME
+          - name: id
             tags: []
-          - name: MODELNAME
+          - name: org_id
             tags: []
-          - name: PRODUCTDESCRIPTION
+          - name: sub_type
+            description: 'Original type was the enum: communication_channel_type'
             tags: []
-          - name: PRODUCTCOLOR
+          - name: updated_date
             tags: []
-          - name: PRODUCTSIZE
-            tags: []
-          - name: PRODUCTSTYLE
-            tags: []
-          - name: PRODUCTCOST
-            tags: []
-          - name: PRODUCTPRICE
-            tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
-            tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
-            tags: []
-      - name: SOURCEPG__SOURCE__PRODUCTSUBCATEGORIES
+      - name: connection
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTSUBCATEGORYKEY
+          - name: archived
             tags: []
-          - name: SUBCATEGORYNAME
+          - name: archived_date
             tags: []
-          - name: PRODUCTCATEGORYKEY
+          - name: connector_version
             tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
+          - name: created_by_id
             tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
+          - name: created_date
             tags: []
-      - name: VIEW_PRODUCTS
+          - name: description
+            tags: []
+          - name: documentation
+            tags: []
+          - name: id
+            tags: []
+          - name: markdown_documentation
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: type
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: connection_data_set_bridge
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTCATEGORYKEY
+          - name: connection_id
             tags: []
-          - name: CATEGORYNAME
+          - name: data_set_id
             tags: []
-          - name: _WAYFARE_CREATED_AT
+          - name: org_id
             tags: []
-          - name: _WAYFARE_UPDATED_AT
+          - name: workspace_id
             tags: []
-      - name: VIEW_VIEW_PRODUCTS
+      - name: credentials_passthrough
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTCATEGORYKEY
+          - name: created_by_id
             tags: []
-          - name: CATEGORYNAME
+          - name: created_date
             tags: []
-          - name: _WAYFARE_CREATED_AT
+          - name: description
             tags: []
-          - name: _WAYFARE_UPDATED_AT
+          - name: id
             tags: []
-      - name: PGSOURCE__SOURCE__PRODUCTS
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: specifics
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: data_field
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTKEY
+          - name: collection_id
             tags: []
-          - name: PRODUCTSUBCATEGORYKEY
+          - name: created_by_id
             tags: []
-          - name: PRODUCTSKU
+          - name: created_date
             tags: []
-          - name: PRODUCTNAME
+          - name: data_set_id
             tags: []
-          - name: MODELNAME
+          - name: data_type
+            description: 'Original type was the enum: data_type'
             tags: []
-          - name: PRODUCTDESCRIPTION
+          - name: data_type_details
             tags: []
-          - name: PRODUCTCOLOR
+          - name: description
             tags: []
-          - name: PRODUCTSIZE
+          - name: format
             tags: []
-          - name: PRODUCTSTYLE
+          - name: id
             tags: []
-          - name: PRODUCTCOST
+          - name: is_nullable
             tags: []
-          - name: PRODUCTPRICE
+          - name: name
             tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
+          - name: org_id
             tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
+          - name: primary_key
             tags: []
-      - name: PGSOURCE__SOURCE__PRODUCTCATEGORIES
+          - name: unique_id
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: data_field_catalog_metadata
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTCATEGORYKEY
+          - name: data_field_id
             tags: []
-          - name: CATEGORYNAME
+          - name: data_set_id
             tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
+          - name: note
             tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
+          - name: org_id
             tags: []
-      - name: PGSOURCE__SOURCE__PRODUCTSUBCATEGORIES
+          - name: workspace_id
+            tags: []
+      - name: data_field_edge
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: PRODUCTSUBCATEGORYKEY
+          - name: org_id
             tags: []
-          - name: SUBCATEGORYNAME
+          - name: source_data_field_id
             tags: []
-          - name: PRODUCTCATEGORYKEY
+          - name: target_data_field_id
             tags: []
-          - name: _WAYFARE_CREATED_AT
-            description: The transaction time at which the row was created by Wayfare
+          - name: workspace_id
             tags: []
-          - name: _WAYFARE_UPDATED_AT
-            description: The transaction time at which the row was last updated by Wayfare
+      - name: data_field_label
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: data_field_id
+            tags: []
+          - name: label_id
+            tags: []
+          - name: org_id
+            tags: []
+      - name: data_field_references
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: collection_id
+            tags: []
+          - name: from_data_field_id
+            tags: []
+          - name: from_data_set_id
+            tags: []
+          - name: from_fully_qualified_name
+            tags: []
+          - name: group_id
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: to_data_field_id
+            tags: []
+          - name: to_data_set_id
+            tags: []
+          - name: to_fully_qualified_name
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: data_project
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: directory
+            tags: []
+          - name: git_sha
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: data_set
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: collection_id
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: data_set_subtype
+            description: 'Original type was the enum: data_set_subtype'
+            tags: []
+          - name: data_set_type
+            description: 'Original type was the enum: data_set_type'
+            tags: []
+          - name: description
+            tags: []
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: namespace
+            tags: []
+          - name: org_id
+            tags: []
+          - name: unique_id
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: data_set_catalog_metadata
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: data_set_id
+            tags: []
+          - name: note
+            tags: []
+          - name: org_id
+            tags: []
+          - name: owner_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: data_set_collection
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: collection_type
+            description: 'Original type was the enum: collection_type'
+            tags: []
+          - name: connection_id
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: description
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: data_set_edge
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: org_id
+            tags: []
+          - name: source_data_set_id
+            tags: []
+          - name: target_data_set_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: data_set_label
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: data_set_id
+            tags: []
+          - name: label_id
+            tags: []
+          - name: org_id
+            tags: []
+      - name: get_dataschema_jobs
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: connection_id
+            tags: []
+          - name: is_latest_job
+            tags: []
+          - name: job_id
+            tags: []
+          - name: org_id
+            tags: []
+      - name: git_provider_integration
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: non_encrypted_details
+            tags: []
+          - name: org_id
+            tags: []
+          - name: provider
+            description: 'Original type was the enum: git_provider'
+            tags: []
+          - name: updated_date
+            tags: []
+      - name: git_provider_integration_old
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: details
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: provider
+            description: 'Original type was the enum: git_provider'
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: job
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: archived
+            tags: []
+          - name: archived_date
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: details
+            tags: []
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: queue_id
+            tags: []
+          - name: state
+            description: 'Original type was the enum: job_status'
+            tags: []
+          - name: type
+            description: 'Original type was the enum: job_type'
+            tags: []
+          - name: updated_date
+            tags: []
+      - name: job_event
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: id
+            tags: []
+          - name: job_id
+            tags: []
+          - name: msg
+            tags: []
+          - name: new_job_state
+            description: 'Original type was the enum: job_status'
+            tags: []
+          - name: org_id
+            tags: []
+          - name: queue_id
+            tags: []
+      - name: job_log_entry
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: date_time
+            tags: []
+          - name: id
+            tags: []
+          - name: job_id
+            tags: []
+          - name: level
+            tags: []
+          - name: msg
+            tags: []
+          - name: org_id
+            tags: []
+      - name: label
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+      - name: model
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: compiled_code
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: data_set_id
+            tags: []
+          - name: definition
+            tags: []
+          - name: description
+            tags: []
+          - name: id
+            tags: []
+          - name: materialization
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: path
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: notification_config
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: details
+            tags: []
+          - name: enabled
+            tags: []
+          - name: event_types
+            tags: []
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: type
+            description: 'Original type was the enum: notification_type'
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: notification_log
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: created_date
+            tags: []
+          - name: id
+            tags: []
+          - name: message
+            tags: []
+          - name: notification_config_id
+            tags: []
+          - name: notification_event_id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: success
+            tags: []
+      - name: organization
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: num_contributors_and_above_limit
+            tags: []
+          - name: num_workspace_limit
+            tags: []
+      - name: private_notification_event
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: event
+            tags: []
+          - name: has_run
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: type
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: private_schedule_lookup
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: org_id
+            tags: []
+          - name: schedule_id
+            tags: []
+      - name: productcategories
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: categoryname
+            tags: []
+          - name: productcategorykey
+            tags: []
+      - name: products
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: modelname
+            tags: []
+          - name: productcolor
+            tags: []
+          - name: productcost
+            tags: []
+          - name: productdescription
+            tags: []
+          - name: productkey
+            tags: []
+          - name: productname
+            tags: []
+          - name: productprice
+            tags: []
+          - name: productsize
+            tags: []
+          - name: productsku
+            tags: []
+          - name: productstyle
+            tags: []
+          - name: productsubcategorykey
+            tags: []
+      - name: productsubcategories
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: productcategorykey
+            tags: []
+          - name: productsubcategorykey
+            tags: []
+          - name: subcategoryname
+            tags: []
+      - name: provider
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: id
+            tags: []
+          - name: internal_org_id
+            tags: []
+          - name: provider_org_id
+            tags: []
+          - name: provider_type
+            description: 'Original type was the enum: provider_type'
+            tags: []
+      - name: queue
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: refresh_token
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: account_id
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: token_id
+            tags: []
+      - name: schedule
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: enabled
+            tags: []
+          - name: frequency
+            tags: []
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: schedule_sync
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: org_id
+            tags: []
+          - name: schedule_id
+            tags: []
+          - name: sync_id
+            tags: []
+      - name: secret_manager
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: available_keys
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: description
+            tags: []
+          - name: details
+            tags: []
+          - name: id
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: sub_type
+            description: 'Original type was the enum: secret_manager_type'
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: service_account
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: account_id
+            tags: []
+          - name: client_secret
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: id
+            tags: []
+          - name: last_active
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+      - name: source_metadata
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: connection_id
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: data_extraction_schema_metadata
+            tags: []
+          - name: dataset_sync_config_schemas
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: sync
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: archived
+            tags: []
+          - name: archived_date
+            tags: []
+          - name: connection_id
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: datasets
+            tags: []
+          - name: description
+            tags: []
+          - name: documentation
+            tags: []
+          - name: file_storage
+            tags: []
+          - name: id
+            tags: []
+          - name: markdown_documentation
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+          - name: source_dataset_sync_config
+            tags: []
+          - name: target_datafield_name_mapping
+            tags: []
+          - name: target_dataset_name_mapping
+            tags: []
+          - name: target_datasets
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: warehouse_dataset_sync_config
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: sync_data_set_bridge
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: data_set_id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: sync_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: sync_dataset_connector_state
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: dataset
+            tags: []
+          - name: id
+            tags: []
+          - name: nonce
+            tags: []
+          - name: org_id
+            tags: []
+          - name: state
+            tags: []
+          - name: sync_id
+            tags: []
+          - name: target_dataset
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: sync_job_dataset_metric
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: batches_directory
+            tags: []
+          - name: dataset
+            tags: []
+          - name: extra_data
+            tags: []
+          - name: id
+            tags: []
+          - name: job_id
+            tags: []
+          - name: n_source_records_deleted
+            tags: []
+          - name: n_source_records_new_or_updated
+            tags: []
+          - name: n_warehouse_records_deleted
+            tags: []
+          - name: n_warehouse_records_inserted
+            tags: []
+          - name: n_warehouse_records_staged
+            tags: []
+          - name: n_warehouse_records_updated
+            tags: []
+          - name: org_id
+            tags: []
+          - name: sync_id
+            tags: []
+          - name: total_batches_size_bytes
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: sync_jobs
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: extra_data
+            tags: []
+          - name: is_latest_job
+            tags: []
+          - name: job_id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: phase_status_clean
+            description: 'Original type was the enum: phase_status'
+            tags: []
+          - name: phase_status_extract
+            description: 'Original type was the enum: phase_status'
+            tags: []
+          - name: phase_status_insert
+            description: 'Original type was the enum: phase_status'
+            tags: []
+          - name: phase_status_stage
+            description: 'Original type was the enum: phase_status'
+            tags: []
+          - name: source_docker_image
+            tags: []
+          - name: sync_id
+            tags: []
+          - name: warehouse_docker_image
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: sync_secret_manager_jobs
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: is_latest_job
+            tags: []
+          - name: job_id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: secret_manager_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: transformation_result
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: id
+            tags: []
+          - name: job_id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: result
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: user_settings
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: org_id
+            tags: []
+          - name: user_id
+            tags: []
+      - name: user_workspace_settings
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: org_id
+            tags: []
+          - name: snowflake_role
+            tags: []
+          - name: user_id
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: users
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: account_id
+            tags: []
+          - name: email
+            tags: []
+          - name: ext_unique_id
+            tags: []
+          - name: id
+            tags: []
+          - name: is_admin
+            tags: []
+          - name: license
+            description: 'Original type was the enum: license'
+            tags: []
+          - name: name
+            tags: []
+          - name: org_id
+            tags: []
+      - name: version_control_account
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: account_id
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: provider
+            description: 'Original type was the enum: version_control_provider'
+            tags: []
+      - name: warehouse_metadata
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: connection_id
+            tags: []
+          - name: created_by_id
+            tags: []
+          - name: created_date
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: sync_config_schema
+            tags: []
+          - name: updated_date
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: workspace
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: rebuild_models_after_sync
+            tags: []
+          - name: title
+            tags: []
+      - name: workspace_git_configuration
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: git_provider_integration_id
+            tags: []
+          - name: id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: repo_branch
+            tags: []
+          - name: repo_name
+            tags: []
+          - name: repo_owner
+            tags: []
+          - name: repo_remote_url
+            tags: []
+          - name: repo_url
+            tags: []
+          - name: workspace_id
+            tags: []
+      - name: workspace_membership
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: account_id
+            tags: []
+          - name: org_id
+            tags: []
+          - name: role
+            description: 'Original type was the enum: workspace_role'
+            tags: []
+          - name: workspace_id
             tags: []
