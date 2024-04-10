@@ -1,3 +1,5 @@
 {{ config(materialized='view') }}
-select blns.blns_col as c
-from {{ source('wayfare', 'blns_dataset') }} as blns
+select blns_col as c
+from {{ source('wayfare', 'blns_dataset') }}
+union
+select a from {{ ref('AB_MODEL') }}
