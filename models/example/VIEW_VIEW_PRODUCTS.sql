@@ -1,3 +1,5 @@
 {{ config(materialized='view') }}
-select *
-from {{ ref('VIEW_PRODUCTS') }}
+select
+    dummy_col as a,
+    dummy_col as b
+from {{ source('wayfare', 'dummy_source_dataset') }}

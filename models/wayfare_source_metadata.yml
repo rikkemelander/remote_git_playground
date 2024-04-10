@@ -133,6 +133,19 @@ sources:
             tags: []
           - name: workspace_id
             tags: []
+      - name: blns_dataset
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+          - name: blns_col
+            tags: []
       - name: communication_channel
         description: ''
         loaded_at_field: _wayfare_updated_at
@@ -436,6 +449,19 @@ sources:
           - name: label_id
             tags: []
           - name: org_id
+            tags: []
+      - name: dummy_source_dataset
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+          - name: dummy_col
             tags: []
       - name: get_dataschema_jobs
         description: ''
