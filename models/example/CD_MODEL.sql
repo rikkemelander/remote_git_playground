@@ -1,5 +1,5 @@
 {{ config(materialized='view') }}
 select
-    a,
-    c
-from {{ ref('BLNS_MODEL') }}
+    blns.a,
+    blns.c
+from {{ ref('BLNS_MODEL') }} as blns
