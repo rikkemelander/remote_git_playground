@@ -1,3 +1,5 @@
 {{ config(materialized='view') }}
-select c
+select
+    c,
+    a || c as d
 from {{ ref('BLNS_MODEL') }}
