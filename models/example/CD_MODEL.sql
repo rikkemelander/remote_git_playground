@@ -2,4 +2,4 @@
 select
     blns.a,
     blns.c
-from {{ ref('BLNS_MODEL') }} as blns
+from {{ ref('A_BLNS_MODEL') }} as blns
