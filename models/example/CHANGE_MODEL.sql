@@ -1,1 +1,1 @@
-select * from {{ ref('A_BLNS_MODEL') }}
+select test.a from {{ ref('A_BLNS_MODEL') }} as test
