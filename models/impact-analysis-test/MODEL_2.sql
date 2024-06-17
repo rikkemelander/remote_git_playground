@@ -1,3 +1,5 @@
 {{ config(materialized='view') }}
-select count(dummy_col) as a
+select
+    _wayfare_created_at as b,
+    dummy_col::int + 1 as a
 from {{ source('wayfare', 'dummy_source_dataset') }}
