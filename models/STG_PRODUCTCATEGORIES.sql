@@ -1,6 +1,5 @@
 select
     productcategories.categoryname as categoryname,
-    'hej' as hej,
     productcategories.productcategorykey as productcategorykey,
     productcategories._wayfare_created_at as _wayfare_created_at,
     productcategories._wayfare_updated_at as _wayfare_updated_at
