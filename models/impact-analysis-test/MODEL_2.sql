@@ -1,5 +1,5 @@
 {{ config(materialized='view') }}
 select
-    dummy_col as a,
-    _wayfare_created_at as b
+    _wayfare_created_at as c,
+    CONCAT(dummy_col, '_test') as a
 from {{ source('wayfare', 'dummy_source_dataset') }}
