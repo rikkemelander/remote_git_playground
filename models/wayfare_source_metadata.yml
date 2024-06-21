@@ -1,36 +1,75 @@
 # THIS FILE IS AUTO GENERATED. DO NOT MODIFY
 version: 2
 sources:
-  - database: postgres
+  - database: DEMO
     name: wayfare
-    description: source
-    schema: warehouse
+    description: Sources synced from wayfare
+    schema: PUBLIC
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
-      - name: blns_dataset
+      - name: PRODUCTCATEGORIES
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: blns_col
+          - name: CATEGORYNAME
             tags: []
-          - name: _wayfare_created_at
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
             tags: []
-          - name: _wayfare_updated_at
+          - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
-      - name: dummy_source_dataset
+      - name: PRODUCTS
         description: ''
         loaded_at_field: _wayfare_updated_at
         tags: []
         columns:
-          - name: dummy_col
+          - name: MODELNAME
             tags: []
-          - name: _wayfare_created_at
+          - name: PRODUCTCOLOR
+            tags: []
+          - name: PRODUCTCOST
+            tags: []
+          - name: PRODUCTDESCRIPTION
+            tags: []
+          - name: PRODUCTKEY
+            tags: []
+          - name: PRODUCTNAME
+            tags: []
+          - name: PRODUCTPRICE
+            tags: []
+          - name: PRODUCTSIZE
+            tags: []
+          - name: PRODUCTSKU
+            tags: []
+          - name: PRODUCTSTYLE
+            tags: []
+          - name: PRODUCTSUBCATEGORYKEY
+            tags: []
+          - name: _WAYFARE_CREATED_AT
             description: The transaction time at which the row was created by Wayfare
             tags: []
-          - name: _wayfare_updated_at
+          - name: _WAYFARE_UPDATED_AT
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: PRODUCTSUBCATEGORIES
+        description: ''
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: PRODUCTCATEGORYKEY
+            tags: []
+          - name: PRODUCTSUBCATEGORYKEY
+            tags: []
+          - name: SUBCATEGORYNAME
+            tags: []
+          - name: _WAYFARE_CREATED_AT
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _WAYFARE_UPDATED_AT
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
