@@ -6,4 +6,4 @@ left join {{ ref('STG_PRODUCTSUBCATEGORIES') }} as psc
     on p.productsubcategorykey = psc.productsubcategorykey
 left join {{ ref('STG_PRODUCTCATEGORIES') }} as pc
     on psc.productcategorykey = pc.productcategorykey
-group by pc.categoryname, psc.hej
+group by pc.categoryname
