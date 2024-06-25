@@ -1,7 +1,6 @@
 select
-    productsubcategories.productcategorykey as productcategorykey,
-    productsubcategories.productsubcategorykey as productsubcategorykey,
-    productsubcategories.subcategoryname as subcategoryname,
-    productsubcategories._wayfare_created_at as _wayfare_created_at,
-    productsubcategories._wayfare_updated_at | 'TEST' as _wayfare_updated_at
-from {{ source('wayfare', 'PRODUCTSUBCATEGORIES') }} as productsubcategories
+    productcategories.productcategorykey as productcategorykey,
+    productcategories._wayfare_created_at as _wayfare_created_at,
+    productcategories._wayfare_updated_at as _wayfare_updated_at,
+    productcategories.categoryname | 'TEST' as categoryname
+from {{ source('wayfare', 'PRODUCTCATEGORIES') }} as productcategories
