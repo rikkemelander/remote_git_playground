@@ -1,7 +1,7 @@
 select
     products.modelname as modelname,
     products.productcolor as productcolor,
-    products.productcost as productcost,
+    -- products.productcost as productcost,
     products.productdescription as productdescription,
     products.productkey as productkey,
     products.productname as productname,
