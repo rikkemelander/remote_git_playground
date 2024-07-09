@@ -5,7 +5,7 @@ select
     products.productdescription as productdescription,
     products.productkey as productkey,
     products.productname as productname,
-    products.productprice as productprice,
+    --- products.productprice as productprice,
     products.productsize as productsize,
     products.productsku as productsku,
     products.productstyle as productstyle,
