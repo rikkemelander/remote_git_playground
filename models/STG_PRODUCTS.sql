@@ -1,4 +1,4 @@
-create or replace view DEMO.PUBLIC.STG_PRODUCTS (
+create or replace view {{ source('wayfare_unmanaged', 'PRODUCTS') }} (
     MODELNAME,
     PRODUCTCOLOR,
     PRODUCTDESCRIPTION,
@@ -15,7 +15,7 @@ create or replace view DEMO.PUBLIC.STG_PRODUCTS (
     select
         PRODUCTS.MODELNAME as MODELNAME,
         PRODUCTS.PRODUCTCOLOR as PRODUCTCOLOR,
-        -- products.productcost as productcost,
+        PRODUCTS.PRODUCTCOST as PRODUCTCOST,
         PRODUCTS.PRODUCTDESCRIPTION as PRODUCTDESCRIPTION,
         PRODUCTS.PRODUCTKEY as PRODUCTKEY,
         PRODUCTS.PRODUCTNAME as PRODUCTNAME,
@@ -26,5 +26,5 @@ create or replace view DEMO.PUBLIC.STG_PRODUCTS (
         PRODUCTS.PRODUCTSUBCATEGORYKEY as PRODUCTSUBCATEGORYKEY,
         PRODUCTS._WAYFARE_CREATED_AT as _WAYFARE_CREATED_AT,
         PRODUCTS._WAYFARE_UPDATED_AT as _WAYFARE_UPDATED_AT
-    from DEMO.PUBLIC.PRODUCTS as PRODUCTS
+    from {{ source('wayfare_unmanaged', 'PRODUCTS') }} as PRODUCTS
 );

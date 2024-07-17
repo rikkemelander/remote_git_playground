@@ -1,4 +1,5 @@
-create or replace view DEMO.PUBLIC.STG_PRODUCTCATEGORIES (
+create or replace view
+{{ source('wayfare_unmanaged', 'PRODUCTCATEGORIES') }} (
     PRODUCTCATEGORYKEY,
     _WAYFARE_CREATED_AT,
     _WAYFARE_UPDATED_AT,
