@@ -1,0 +1,14 @@
+create or replace view DEMO.PUBLIC.AGGREGATES (
+    CATEGORYNAME,
+    TOTAL_COST
+) as (
+    select
+        PC.CATEGORYNAME,
+        sum(P.PRODUCTCOST + P.PRODUCTPRICE) as TOTAL_COST
+    from {{ ref('STG_PRODUCTS') }} as P
+    left join {{ ref('STG_PRODUCTSUBCATEGORIES') }} as PSC
+        on P.PRODUCTSUBCATEGORYKEY = PSC.PRODUCTSUBCATEGORYKEY
+    left join {{ ref('STG_PRODUCTCATEGORIES') }} as PC
+        on PSC.PRODUCTCATEGORYKEY = PC.PRODUCTCATEGORYKEY
+    group by PC.CATEGORYNAME
+);
