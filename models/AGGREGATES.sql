@@ -1,5 +1,6 @@
 select
-    PC.CATEGORYNAME,
+    -- PC.CATEGORYNAME,
+    P.MODELNAME,
     sum(P.PRODUCTCOST + P.PRODUCTPRICE) as TOTAL_COST
 from {{ ref('STG_PRODUCTS') }} as P
 left join {{ ref('STG_PRODUCTSUBCATEGORIES') }} as PSC
