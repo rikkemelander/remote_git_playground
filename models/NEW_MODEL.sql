@@ -1,4 +1,4 @@
 select
-    a.total_cost as some_name,
-    a.modelname as another_name
+    a.total_cost,
+    a.categoryname
 from {{ ref('AGGREGATES') }} as a
