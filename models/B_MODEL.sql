@@ -1,3 +1,3 @@
 {{ config(materialized='view') }}
-select d.b
+select d.a
 from {{ ref('DUMMY_MODEL') }} as d
