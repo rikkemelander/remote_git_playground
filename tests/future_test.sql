@@ -1,3 +1,3 @@
 SELECT *
-FROM {{ ref('my_model') }}
+FROM {{ ref('DUMMY_MODEL') }}
 WHERE b > CURRENT_TIMESTAMP
