@@ -1,5 +1,3 @@
 {{ config(materialized='view') }}
-select
-    blns.blns_col,
-    blns._wayfare_created_at as d
+select blns.blns_col
 from {{ source('wayfare', 'blns_dataset') }} as blns
