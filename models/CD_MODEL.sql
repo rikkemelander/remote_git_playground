@@ -1,3 +1,3 @@
 {{ config(materialized='view') }}
-select blns.a
+select concat(blns.a, 'kaj') as a
 from {{ ref('A_BLNS_MODEL') }} as blns
