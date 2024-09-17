@@ -25,6 +25,19 @@ sources:
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
+      - name: blns_dataset
+        description: ""
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: blns_col
+            tags: []
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
       - name: dataset
         description: ""
         loaded_at_field: _wayfare_updated_at
@@ -85,6 +98,19 @@ sources:
           - name: union_nested
             tags: []
           - name: xml
+            tags: []
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+            tags: []
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+            tags: []
+      - name: dummy_source_dataset
+        description: ""
+        loaded_at_field: _wayfare_updated_at
+        tags: []
+        columns:
+          - name: dummy_col
             tags: []
           - name: _wayfare_created_at
             description: The transaction time at which the row was created by Wayfare
