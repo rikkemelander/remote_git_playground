@@ -1,3 +1,3 @@
 {{ config(materialized='view') }}
-select blns.f as a
+select blns.a as a
 from {{ ref('A_BLNS_MODEL') }} as blns

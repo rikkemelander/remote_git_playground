@@ -47,15 +47,101 @@ sources:
             tags: []
           - name: array_any
             tags: []
+          - name: array_boolean
+            tags: []
+          - name: array_bytes
+            tags: []
+          - name: array_date
+            tags: []
+          - name: array_datetime_with_timezone
+            tags: []
+          - name: array_datetime_without_timezone
+            tags: []
+          - name: array_decimal
+            tags: []
+          - name: array_decimal_precision
+            tags: []
+          - name: array_decimal_precision_scale
+            tags: []
+          - name: array_decimal_scale
+            tags: []
+          - name: array_float
+            tags: []
+          - name: array_geography
+            tags: []
+          - name: array_geometry
+            tags: []
+          - name: array_integer_128
+            tags: []
+          - name: array_integer_16
+            tags: []
+          - name: array_integer_32
+            tags: []
+          - name: array_integer_4
+            tags: []
+          - name: array_integer_64
+            tags: []
+          - name: array_integer_8
+            tags: []
+          - name: array_json
+            tags: []
+          - name: array_map
+            tags: []
+          - name: array_string
+            tags: []
+          - name: array_string_allowed_values
+            tags: []
+          - name: array_string_max_and_min_length
+            tags: []
+          - name: array_string_max_length
+            tags: []
+          - name: array_string_min_length
+            tags: []
+          - name: array_struct_all
+            tags: []
+          - name: array_struct_simple
+            tags: []
+          - name: array_time
+            tags: []
+          - name: array_uinteger_128
+            tags: []
+          - name: array_uinteger_16
+            tags: []
+          - name: array_uinteger_32
+            tags: []
+          - name: array_uinteger_4
+            tags: []
+          - name: array_uinteger_64
+            tags: []
+          - name: array_uinteger_8
+            tags: []
+          - name: array_union
+            tags: []
+          - name: array_xml
+            tags: []
           - name: boolean
             tags: []
           - name: case_data_field_name
+            tags: []
+          - name: case_full_name
+            tags: []
+          - name: case_variant_name
             tags: []
           - name: date
             tags: []
           - name: datetime_with_timezone
             tags: []
+          - name: datetime_without_timezone
+            tags: []
           - name: decimal
+            tags: []
+          - name: decimal_huge_precision
+            tags: []
+          - name: decimal_precision
+            tags: []
+          - name: decimal_precision_scale
+            tags: []
+          - name: decimal_scale
             tags: []
           - name: float
             tags: []
@@ -79,7 +165,27 @@ sources:
             tags: []
           - name: map
             tags: []
+          - name: map_any
+            tags: []
+          - name: map_huge_int_key
+            tags: []
+          - name: map_int_key
+            tags: []
+          - name: string
+            tags: []
+          - name: string_allowed_values
+            tags: []
+          - name: string_max_and_min_length
+            tags: []
+          - name: string_max_length
+            tags: []
+          - name: string_min_length
+            tags: []
           - name: struct_all
+            tags: []
+          - name: struct_nested
+            tags: []
+          - name: struct_simple
             tags: []
           - name: time
             tags: []
@@ -96,6 +202,8 @@ sources:
           - name: uinteger_8
             tags: []
           - name: union_nested
+            tags: []
+          - name: union_simple
             tags: []
           - name: xml
             tags: []
