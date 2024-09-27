@@ -6,10 +6,11 @@
 # - Source, Table and Column names
 # - loaded_at_field, schema, loader, database
 # - No new sources, tables or columns can be added. Sources must be added in a different file
+# - Descriptions for tables and columns
 
 # Changes you can make:
 
-# - Change descriptions, tags, etc.
+# - Change tags, etc.
 # - Add column tests
 # - Add extra properties to any object such as freshness, meta, etc.
 
