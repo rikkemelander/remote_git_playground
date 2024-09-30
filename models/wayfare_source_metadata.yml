@@ -19,41 +19,14 @@
 
 version: 2
 sources:
-  - database: warehouse
+  - catalog: wayfare_dev
     name: wayfare
     description: Sources synced from wayfare
-    schema: warehouse
+    schema: raw_rmel
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
-      - name: association_types
-        description: ""
-        loaded_at_field: _wayfare_updated_at
-        tags: []
-        columns:
-          - name: cardinality
-            tags: []
-          - name: created_at
-            tags: []
-          - name: from_object_type_id
-            tags: []
-          - name: id
-            tags: []
-          - name: inverse_cardinality
-            tags: []
-          - name: name
-            tags: []
-          - name: to_object_type_id
-            tags: []
-          - name: updated_at
-            tags: []
-          - name: _wayfare_created_at
-            description: The transaction time at which the row was created by Wayfare
-            tags: []
-          - name: _wayfare_updated_at
-            description: The transaction time at which the row was last updated by Wayfare
-            tags: []
-      - name: blns_dataset
+      - name: blns_dataset_dummy
         description: ""
         loaded_at_field: _wayfare_updated_at
         tags: []
@@ -72,168 +45,253 @@ sources:
         tags: []
         columns:
           - name: any
+            description: ""
             tags: []
           - name: array_any
+            description: ""
             tags: []
           - name: array_boolean
+            description: ""
             tags: []
           - name: array_bytes
+            description: ""
             tags: []
           - name: array_date
+            description: ""
             tags: []
           - name: array_datetime_with_timezone
+            description: ""
             tags: []
           - name: array_datetime_without_timezone
+            description: ""
             tags: []
           - name: array_decimal
+            description: ""
             tags: []
           - name: array_decimal_precision
+            description: ""
             tags: []
           - name: array_decimal_precision_scale
+            description: ""
             tags: []
           - name: array_decimal_scale
+            description: ""
             tags: []
           - name: array_float
+            description: ""
             tags: []
           - name: array_geography
+            description: ""
             tags: []
           - name: array_geometry
+            description: ""
             tags: []
           - name: array_integer_128
+            description: ""
             tags: []
           - name: array_integer_16
+            description: ""
             tags: []
           - name: array_integer_32
+            description: ""
             tags: []
           - name: array_integer_4
+            description: ""
             tags: []
           - name: array_integer_64
+            description: ""
             tags: []
           - name: array_integer_8
+            description: ""
             tags: []
           - name: array_json
+            description: ""
             tags: []
           - name: array_map
+            description: ""
             tags: []
           - name: array_string
+            description: ""
             tags: []
           - name: array_string_allowed_values
+            description: ""
             tags: []
           - name: array_string_max_and_min_length
+            description: ""
             tags: []
           - name: array_string_max_length
+            description: ""
             tags: []
           - name: array_string_min_length
+            description: ""
             tags: []
           - name: array_struct_all
+            description: ""
             tags: []
           - name: array_struct_simple
+            description: ""
             tags: []
           - name: array_time
+            description: ""
             tags: []
           - name: array_uinteger_128
+            description: ""
             tags: []
           - name: array_uinteger_16
+            description: ""
             tags: []
           - name: array_uinteger_32
+            description: ""
             tags: []
           - name: array_uinteger_4
+            description: ""
             tags: []
           - name: array_uinteger_64
+            description: ""
             tags: []
           - name: array_uinteger_8
+            description: ""
             tags: []
           - name: array_union
+            description: ""
             tags: []
           - name: array_xml
+            description: ""
             tags: []
           - name: boolean
+            description: ""
+            tags: []
+          - name: bytes
+            description: ""
             tags: []
           - name: case_data_field_name
+            description: ""
             tags: []
           - name: case_full_name
+            description: ""
             tags: []
           - name: case_variant_name
+            description: ""
             tags: []
           - name: date
+            description: ""
             tags: []
           - name: datetime_with_timezone
+            description: ""
             tags: []
           - name: datetime_without_timezone
+            description: ""
             tags: []
           - name: decimal
+            description: ""
             tags: []
           - name: decimal_huge_precision
+            description: ""
             tags: []
           - name: decimal_precision
+            description: ""
             tags: []
           - name: decimal_precision_scale
+            description: ""
             tags: []
           - name: decimal_scale
+            description: ""
             tags: []
           - name: float
+            description: ""
             tags: []
           - name: geography
+            description: ""
             tags: []
           - name: geometry
+            description: ""
             tags: []
           - name: integer_128
+            description: ""
             tags: []
           - name: integer_16
+            description: ""
             tags: []
           - name: integer_32
+            description: ""
             tags: []
           - name: integer_4
+            description: ""
             tags: []
           - name: integer_64
+            description: ""
             tags: []
           - name: integer_8
+            description: ""
             tags: []
           - name: json
+            description: ""
             tags: []
           - name: map
+            description: ""
             tags: []
           - name: map_any
+            description: ""
             tags: []
           - name: map_huge_int_key
+            description: ""
             tags: []
           - name: map_int_key
+            description: ""
             tags: []
           - name: string
+            description: ""
             tags: []
           - name: string_allowed_values
+            description: ""
             tags: []
           - name: string_max_and_min_length
+            description: ""
             tags: []
           - name: string_max_length
+            description: ""
             tags: []
           - name: string_min_length
+            description: ""
             tags: []
           - name: struct_all
+            description: ""
             tags: []
           - name: struct_nested
+            description: ""
             tags: []
           - name: struct_simple
+            description: ""
             tags: []
           - name: time
+            description: ""
             tags: []
           - name: uinteger_128
+            description: ""
             tags: []
           - name: uinteger_16
+            description: ""
             tags: []
           - name: uinteger_32
+            description: ""
             tags: []
           - name: uinteger_4
+            description: ""
             tags: []
           - name: uinteger_64
+            description: ""
             tags: []
           - name: uinteger_8
+            description: ""
             tags: []
           - name: union_nested
+            description: ""
             tags: []
           - name: union_simple
+            description: ""
             tags: []
           - name: xml
+            description: ""
             tags: []
           - name: _wayfare_created_at
             description: The transaction time at which the row was created by Wayfare
@@ -247,6 +305,7 @@ sources:
         tags: []
         columns:
           - name: dummy_col
+            description: ""
             tags: []
           - name: _wayfare_created_at
             description: The transaction time at which the row was created by Wayfare
