@@ -26,7 +26,7 @@ sources:
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
-      - name: blns_dataset_dummy
+      - name: blns_dataset
         description: ""
         loaded_at_field: _wayfare_updated_at
         tags: []
@@ -34,10 +34,8 @@ sources:
           - name: blns_col
             tags: []
           - name: _wayfare_created_at
-            description: The transaction time at which the row was created by Wayfare
             tags: []
           - name: _wayfare_updated_at
-            description: The transaction time at which the row was last updated by Wayfare
             tags: []
       - name: dataset
         description: ""
