@@ -19,23 +19,53 @@
 
 version: 2
 sources:
-  - catalog: wayfare_dev
+  - database: warehouse
     name: wayfare_unmanaged
     description: Unmanaged sources in the warehouse
-    schema: raw_rmel
+    schema: warehouse
     tables:
-      - name: product_assembly_instructions
+      - name: productcategories
         description: ""
         tags: []
         columns:
-          - name: instructions
+          - name: categoryname
             tags: []
-          - name: last_updated
+          - name: productcategorykey
             tags: []
-          - name: product_id
+      - name: products
+        description: ""
+        tags: []
+        columns:
+          - name: modelname
             tags: []
-          - name: _wayfare_created_at
+          - name: productcolor
             tags: []
-          - name: _wayfare_updated_at
+          - name: productcost
             tags: []
-  
+          - name: productdescription
+            tags: []
+          - name: productkey
+            tags: []
+          - name: productname
+            tags: []
+          - name: productprice
+            tags: []
+          - name: productsize
+            tags: []
+          - name: productsku
+            tags: []
+          - name: productstyle
+            tags: []
+          - name: productsubcategorykey
+            tags: []
+      - name: productsubcategories
+        description: ""
+        tags: []
+        columns:
+          - name: productcategorykey
+            tags: []
+          - name: productsubcategorykey
+            tags: []
+          - name: subcategoryname
+            tags: []
+    catalog: wayfare_dev
