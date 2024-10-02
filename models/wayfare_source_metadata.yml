@@ -227,4 +227,3 @@ sources:
           - name: _wayfare_updated_at
             description: The transaction time at which the row was last updated by Wayfare
             tags: []
-    catalog: wayfare_dev
