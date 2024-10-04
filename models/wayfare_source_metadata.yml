@@ -53,7 +53,7 @@ sources:
           - name: array_bytes
             tags: []
           - name: array_date
-            tags: []
+            tags: ["hej"]
           - name: array_datetime_with_timezone
             tags: []
           - name: array_datetime_without_timezone

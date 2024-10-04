@@ -26,10 +26,10 @@ sources:
     tables:
       - name: productcategories
         description: ""
-        tags: []
+        tags: ["dataset_tag"]
         columns:
           - name: categoryname
-            tags: []
+            tags: ["datafield_tag"]
           - name: productcategorykey
             tags: []
       - name: products
@@ -41,7 +41,7 @@ sources:
           - name: productcolor
             tags: []
           - name: productcost
-            tags: []
+            tags: ["test1"]
           - name: productdescription
             tags: []
           - name: productkey
@@ -53,7 +53,7 @@ sources:
           - name: productsize
             tags: []
           - name: productsku
-            tags: []
+            tags: ["test2"]
           - name: productstyle
             tags: []
           - name: productsubcategorykey
