@@ -1,0 +1,107 @@
+version: "0.1"
+syncs:
+  - id: 37c1e9bd-87f4-4ebc-8245-7a1b3761057d
+    connection_id: ca1cb07f-eb8b-47f2-b2bc-4e313bb4aff1
+    name: post sync
+    description: ""
+    extraction_concurrency:
+      num_workers: 1
+    file_storage:
+      folder_path: ""
+      file_details:
+        type: PARQUET
+      batch_size: 250000
+      delete_after_sync: true
+    data_sets:
+      - unique_id: demo.source.sales_orders
+        target_name: sales_orders
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: demo.source.sales_orders.total_amount
+            target_name: total_amount
+          - unique_id: demo.source.sales_orders.order_id
+            target_name: order_id
+          - unique_id: demo.source.sales_orders.order_date
+            target_name: order_date
+          - unique_id: demo.source.sales_orders.customer_email
+            target_name: customer_email
+      - unique_id: demo.source.products
+        target_name: products
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: demo.source.products.productsize
+            target_name: productsize
+          - unique_id: demo.source.products.productdescription
+            target_name: productdescription
+          - unique_id: demo.source.products.productname
+            target_name: productname
+          - unique_id: demo.source.products.productsku
+            target_name: productsku
+          - unique_id: demo.source.products.productsubcategorykey
+            target_name: productsubcategorykey
+          - unique_id: demo.source.products.productkey
+            target_name: productkey
+          - unique_id: demo.source.products.productcolor
+            target_name: productcolor
+          - unique_id: demo.source.products.productcost
+            target_name: productcost
+          - unique_id: demo.source.products.productprice
+            target_name: productprice
+          - unique_id: demo.source.products.productstyle
+            target_name: productstyle
+          - unique_id: demo.source.products.modelname
+            target_name: modelname
+      - unique_id: demo.source.sales_order_items
+        target_name: sales_order_items
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: demo.source.sales_order_items.unit_price
+            target_name: unit_price
+          - unique_id: demo.source.sales_order_items.order_item_id
+            target_name: order_item_id
+          - unique_id: demo.source.sales_order_items.line_total
+            target_name: line_total
+          - unique_id: demo.source.sales_order_items.product_key
+            target_name: product_key
+          - unique_id: demo.source.sales_order_items.quantity
+            target_name: quantity
+          - unique_id: demo.source.sales_order_items.order_id
+            target_name: order_id
+      - unique_id: demo.source.productcategories
+        target_name: productcategories
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: demo.source.productcategories.categoryname
+            target_name: categoryname
+          - unique_id: demo.source.productcategories.productcategorykey
+            target_name: productcategorykey
+      - unique_id: demo.source.productsubcategories
+        target_name: productsubcategories
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: demo.source.productsubcategories.subcategoryname
+            target_name: subcategoryname
+          - unique_id: demo.source.productsubcategories.productcategorykey
+            target_name: productcategorykey
+          - unique_id: demo.source.productsubcategories.productsubcategorykey
+            target_name: productsubcategorykey
