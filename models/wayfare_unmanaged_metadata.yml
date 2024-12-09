@@ -19,17 +19,19 @@
 
 version: 2
 sources:
-  - database: warehouse
+  - database: demo
     name: wayfare_unmanaged
     description: Unmanaged sources in the warehouse
-    schema: warehouse
+    schema: source
     tables:
       - name: productcategories
         description: ""
-        tags: ["dataset_tag"]
+        tags:
+          - dataset_tag
         columns:
           - name: categoryname
-            tags: ["datafield_tag"]
+            tags:
+              - datafield_tag
           - name: productcategorykey
             tags: []
       - name: products
@@ -41,7 +43,8 @@ sources:
           - name: productcolor
             tags: []
           - name: productcost
-            tags: ["test1"]
+            tags:
+              - test1
           - name: productdescription
             tags: []
           - name: productkey
@@ -53,7 +56,8 @@ sources:
           - name: productsize
             tags: []
           - name: productsku
-            tags: ["test2"]
+            tags:
+              - test2
           - name: productstyle
             tags: []
           - name: productsubcategorykey
@@ -68,3 +72,19 @@ sources:
             tags: []
           - name: subcategoryname
             tags: []
+      - name: sales_order_items
+        description: ""
+        columns:
+          - name: line_total
+          - name: order_id
+          - name: order_item_id
+          - name: product_key
+          - name: quantity
+          - name: unit_price
+      - name: sales_orders
+        description: ""
+        columns:
+          - name: customer_email
+          - name: order_date
+          - name: order_id
+          - name: total_amount
