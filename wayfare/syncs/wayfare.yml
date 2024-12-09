@@ -2,13 +2,14 @@ version: "0.1"
 syncs:
   - id: 444f0882-c3fb-4ba7-a97a-e8ddd76fc30c
     connection_id: 41006937-0910-42d5-8ed9-1e3fc1c6d018
-    name: kjl
+    name: wayfare
     description: ""
     extraction_concurrency:
       num_workers: 1
     file_storage:
       folder_path: ""
       file_details:
+        compression: zstd
         type: PARQUET
       batch_size: 250000
       delete_after_sync: true
@@ -218,8 +219,8 @@ syncs:
         data_extraction_config:
           name: Incremental
           values:
-            percent_deletes: "0.1"
             random_deletes: true
+            percent_deletes: "0.1"
         loading_option:
           type: Upsert
           delete_mode: hard
