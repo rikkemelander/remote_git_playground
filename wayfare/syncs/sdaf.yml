@@ -4,11 +4,13 @@ syncs:
     connection_id: 0d6fa399-007b-4eea-b112-399fd7a04aaa
     name: sdaf
     description: ""
+    table_prefix: test_
     extraction_concurrency:
       num_workers: 1
     file_storage:
       folder_path: ""
       file_details:
+        compression: zstd
         type: PARQUET
       batch_size: 250000
       delete_after_sync: true
