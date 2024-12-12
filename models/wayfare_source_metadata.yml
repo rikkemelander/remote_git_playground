@@ -19,10 +19,10 @@
 
 version: 2
 sources:
-  - database: demo
+  - database: warehouse
     name: wayfare
     description: Sources from the wayfare sync
-    schema: source
+    schema: existing_schema
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
     tables:
@@ -31,6 +31,10 @@ sources:
         loaded_at_field: _wayfare_updated_at
         columns:
           - name: blns_col
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
       - name: dataset
         description: ""
         loaded_at_field: _wayfare_updated_at
@@ -74,7 +78,6 @@ sources:
           - name: array_union
           - name: array_xml
           - name: boolean
-          - name: bytes
           - name: case_data_field_name
           - name: case_full_name
           - name: case_variant_name
@@ -119,17 +122,29 @@ sources:
           - name: union_nested
           - name: union_simple
           - name: xml
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
       - name: dataset_with_deletes
         description: ""
         loaded_at_field: _wayfare_updated_at
         columns:
           - name: id
           - name: val
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
       - name: dataset_with_same_name
         description: ""
         loaded_at_field: _wayfare_updated_at
         columns:
           - name: id
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
       - name: dummy_contacts
         description: ""
         loaded_at_field: _wayfare_updated_at
@@ -137,8 +152,16 @@ sources:
           - name: company
           - name: email
           - name: name
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
       - name: dummy_source_dataset
         description: ""
         loaded_at_field: _wayfare_updated_at
         columns:
           - name: dummy_col
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
