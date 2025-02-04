@@ -20,8 +20,8 @@
 version: 2
 sources:
   - database: warehouse
-    name: sync
-    description: Sources from the sync sync
+    name: wayfare
+    description: Sources from the wayfare sync
     schema: existing_schema
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
