@@ -20,8 +20,8 @@
 version: 2
 sources:
   - database: warehouse
-    name: wayfare
-    description: Sources from the wayfare sync
+    name: sync
+    description: Sources from the sync sync
     schema: existing_schema
     loader: wayfare
     loaded_at_field: _wayfare_updated_at
@@ -127,6 +127,16 @@ sources:
           - name: _wayfare_updated_at
             description: The transaction time at which the row was last updated by Wayfare
       - name: dataset_with_deletes
+        description: ""
+        loaded_at_field: _wayfare_updated_at
+        columns:
+          - name: id
+          - name: val
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+      - name: dataset_with_one_absurdly_big_record
         description: ""
         loaded_at_field: _wayfare_updated_at
         columns:
