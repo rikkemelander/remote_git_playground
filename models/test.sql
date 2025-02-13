@@ -1,1 +1,1 @@
-select * from {{ source('wayfare', 'dummy_source_dataset') }}
+select * from {{ ref('A_BLNS_MODEL') }}
