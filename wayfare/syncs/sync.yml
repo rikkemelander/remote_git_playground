@@ -9,6 +9,7 @@ syncs:
     file_storage:
       folder_path: ""
       file_details:
+        compression: zstd
         type: PARQUET
       batch_size: 250000
       delete_after_sync: true
@@ -204,8 +205,8 @@ syncs:
         data_extraction_config:
           name: Incremental
           values:
-            random_deletes: true
             percent_deletes: "0.1"
+            random_deletes: true
         loading_option:
           type: Upsert
           delete_mode: hard
