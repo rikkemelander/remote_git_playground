@@ -1,0 +1,25 @@
+version: "0.1"
+syncs:
+  - id: e847372a-9a32-41fe-8989-ad279b0ea137
+    connection_id: 280bc012-aca3-4b92-917c-8e15eb7332c9
+    name: hej
+    description: ""
+    extraction_concurrency:
+      num_workers: 1
+    file_storage:
+      folder_path: ""
+      file_details:
+        type: PARQUET
+      batch_size: 250000
+      delete_after_sync: true
+    data_sets:
+      - unique_id: blns_dataset_uid
+        target_name: blns_dataset_1
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: blns_dataset_uid.blns_col
+            target_name: blns_col
