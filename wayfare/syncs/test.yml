@@ -1,7 +1,7 @@
 version: "0.1"
 syncs:
-  - id: 2c800981-0f39-44a6-9132-d19d98a56c0b
-    connection_id: e04a5b9c-67fa-4145-88ca-a730b38ce2aa
+  - id: 088c00d6-5b3a-4198-8294-c21cebe67b00
+    connection_id: d431da07-fc6f-4952-9e54-771c384ef7db
     name: test
     description: ""
     extraction_concurrency:
@@ -9,13 +9,12 @@ syncs:
     file_storage:
       folder_path: ""
       file_details:
-        compression: zstd
         type: PARQUET
       batch_size: 250000
       delete_after_sync: true
     data_sets:
       - unique_id: blns_dataset_uid
-        target_name: dataset
+        target_name: blns_dataset
         data_extraction_config:
           name: Full Extract
           values: null
