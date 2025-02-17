@@ -15,7 +15,7 @@ syncs:
       delete_after_sync: true
     data_sets:
       - unique_id: blns_dataset_uid
-        target_name: blns_dataset
+        target_name: blns_dataset_2
         data_extraction_config:
           name: Full Extract
           values: null
@@ -205,8 +205,8 @@ syncs:
         data_extraction_config:
           name: Incremental
           values:
-            percent_deletes: "0.1"
             random_deletes: true
+            percent_deletes: "0.1"
         loading_option:
           type: Upsert
           delete_mode: hard
