@@ -15,7 +15,7 @@ syncs:
       delete_after_sync: true
     data_sets:
       - unique_id: blns_dataset_uid
-        target_name: blns_dataset_2
+        target_name: fest
         data_extraction_config:
           name: Full Extract
           values: null
