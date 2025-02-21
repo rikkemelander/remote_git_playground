@@ -27,7 +27,10 @@ syncs:
       - unique_id: dataset_with_deletes_uid
         target_name: dataset_with_deletes
         data_extraction_config:
-          name: Full Extract
+          name: Incremental
+          values:
+            random_deletes: true
+            percent_deletes: "0.1"
         loading_option:
           type: Upsert
           delete_mode: hard
