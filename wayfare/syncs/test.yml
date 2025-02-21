@@ -18,9 +18,10 @@ syncs:
         target_name: blns_dataset
         data_extraction_config:
           name: Full Extract
-          values: null
         loading_option:
-          type: Truncate and insert
+          type: SCDType2
+          primary_keys:
+            - blns_dataset_uid.blns_col
         data_fields:
           - unique_id: blns_dataset_uid.blns_col
             target_name: blns_col
@@ -210,3 +211,17 @@ syncs:
         data_fields:
           - unique_id: dummy_source_dataset_uid.dummy_col
             target_name: dummy_col
+      - unique_id: dataset_with_one_absurdly_big_record
+        target_name: dataset_with_one_absurdly_big_record
+        data_extraction_config:
+          name: Full Extract
+        loading_option:
+          type: Upsert
+          delete_mode: hard
+          primary_keys:
+            - dataset_with_one_absurdly_big_record.id
+        data_fields:
+          - unique_id: dataset_with_one_absurdly_big_record.id
+            target_name: id
+          - unique_id: dataset_with_one_absurdly_big_record.val
+            target_name: val
