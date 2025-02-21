@@ -27,17 +27,29 @@ syncs:
       - unique_id: dataset_with_deletes_uid
         target_name: dataset_with_deletes
         data_extraction_config:
-          name: Incremental
+          name: Full Extract
           values:
             random_deletes: true
             percent_deletes: "0.1"
         loading_option:
-          type: Upsert
+          type: SCDType2
           delete_mode: hard
           primary_keys:
-            - dataset_with_deletes_uid.id
+            - dataset_with_deletes_uid.val
         data_fields:
           - unique_id: dataset_with_deletes_uid.id
             target_name: id
           - unique_id: dataset_with_deletes_uid.val
+            target_name: val
+      - unique_id: dataset_with_one_absurdly_big_record
+        target_name: dataset_with_one_absurdly_big_record
+        data_extraction_config:
+          name: Full Extract
+        loading_option:
+          type: Upsert
+          delete_mode: hard
+          primary_keys:
+            - dataset_with_one_absurdly_big_record.id
+        data_fields:
+          - unique_id: dataset_with_one_absurdly_big_record.val
             target_name: val
