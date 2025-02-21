@@ -19,7 +19,8 @@ syncs:
         data_extraction_config:
           name: Full Extract
         loading_option:
-          type: SCDType2
+          type: Upsert
+          delete_mode: hard
           primary_keys:
             - blns_dataset_uid.blns_col
         data_fields:
@@ -215,6 +216,7 @@ syncs:
         target_name: dataset_with_one_absurdly_big_record
         data_extraction_config:
           name: Full Extract
+          values: null
         loading_option:
           type: Upsert
           delete_mode: hard
