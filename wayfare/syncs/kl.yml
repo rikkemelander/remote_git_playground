@@ -1,0 +1,25 @@
+version: "0.1"
+syncs:
+  - id: 17437d41-151e-4495-b341-5eee588e6491
+    connection_id: e2930bf8-f0a9-4a97-92e1-f685b0dbf332
+    name: kl
+    description: ""
+    extraction_concurrency:
+      num_workers: 1
+    file_storage:
+      folder_path: ""
+      file_details:
+        type: PARQUET
+      batch_size: 250000
+      delete_after_sync: true
+    data_sets:
+      - unique_id: blns_dataset_uid
+        target_name: blns_dataset
+        data_extraction_config:
+          name: Full Extract
+          values: null
+        loading_option:
+          type: Truncate and insert
+        data_fields:
+          - unique_id: blns_dataset_uid.blns_col
+            target_name: blns_col
