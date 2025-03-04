@@ -22,6 +22,31 @@ sources:
   - database: warehouse
     name: wayfare_unmanaged
     description: Unmanaged sources in the warehouse
+    schema: _wayfare
+    tables:
+      - name: activation_failures_b38ce6f8
+        description: ""
+        columns:
+          - name: any
+          - name: array_boolean
+          - name: wayfare_activation_id
+            description: The id of the activation whose job result in this failure.
+          - name: wayfare_error
+            description: A description of what went wrong during the activation of this
+              record.
+          - name: wayfare_job_id
+            description: The id of the activation job in which this activation failure
+              occured.
+          - name: wayfare_temporary_record_id
+            description: The temporary id of the record. Used to identify records even when
+              they don't have a key.
+          - name: _wayfare_created_at
+            description: The transaction time at which the row was created by Wayfare
+          - name: _wayfare_updated_at
+            description: The transaction time at which the row was last updated by Wayfare
+  - database: warehouse
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
     schema: existing_schema
     tables:
       - name: training_courses

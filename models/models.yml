@@ -2,106 +2,107 @@ version: 2
 models:
   - name: b_model
     columns:
-      - name: test
       - name: a
+      - name: test
   - name: a_blns_model
+    description: This is a description
     columns:
       - name: a
       - name: c
-  - name: blns_model
-    columns:
-      - name: a
   - name: data_type_test
     columns:
-      - name: array_decimal_precision
-      - name: union_simple
-      - name: array_integer_32
-      - name: time
-      - name: array_union
-      - name: array_integer_4
-      - name: string_min_length
-      - name: _wayfare_updated_at
+      - name: array_string_min_length
+      - name: map_huge_int_key
       - name: array_uinteger_128
-      - name: array_decimal_precision_scale
-      - name: array_string
-      - name: decimal_precision
-      - name: array_float
-      - name: decimal_huge_precision
-      - name: array_bytes
-      - name: struct_all
-      - name: boolean
-      - name: array_datetime_with_timezone
-      - name: uinteger_128
-      - name: integer_8
-      - name: array_geography
-      - name: case_variant_name
-      - name: integer_16
-      - name: geography
-      - name: array_uinteger_64
-      - name: xml
-      - name: integer_4
-      - name: _wayfare_created_at
-      - name: integer_32
-      - name: decimal_scale
-      - name: array_struct_simple
-      - name: array_uinteger_4
-      - name: union_nested
-      - name: case_data_field_name
-      - name: array_map
-      - name: uinteger_64
-      - name: array_string_max_and_min_length
-      - name: decimal
-      - name: array_date
-      - name: array_time
-      - name: struct_simple
-      - name: array_uinteger_8
-      - name: array_integer_8
-      - name: array_datetime_without_timezone
-      - name: array_decimal
-      - name: string_max_and_min_length
-      - name: array_geometry
-      - name: geometry
+      - name: array_xml
       - name: date
       - name: array_uinteger_16
-      - name: integer_64
-      - name: array_string_max_length
-      - name: array_struct_all
-      - name: array_string_allowed_values
-      - name: string_allowed_values
-      - name: array_json
-      - name: map_huge_int_key
-      - name: array_integer_16
-      - name: array_integer_64
-      - name: uinteger_32
-      - name: any
-      - name: decimal_precision_scale
-      - name: array_decimal_scale
-      - name: uinteger_8
-      - name: map_any
-      - name: array_uinteger_32
-      - name: map_int_key
-      - name: float
-      - name: uinteger_16
-      - name: array_xml
-      - name: string_max_length
-      - name: array_boolean
-      - name: uinteger_4
-      - name: json_object
-      - name: string
-      - name: datetime_with_timezone
-      - name: map
-      - name: case_full_name
-      - name: struct_nested
-      - name: integer_128
-      - name: datetime_without_timezone
-      - name: array_string_min_length
-      - name: json
+      - name: _wayfare_updated_at
       - name: array_integer_128
+      - name: array_struct_all
+      - name: case_full_name
+      - name: uinteger_8
+      - name: boolean
+      - name: array_datetime_with_timezone
+      - name: integer_128
+      - name: array_float
+      - name: array_integer_32
+      - name: array_json
+      - name: array_geography
+      - name: array_bytes
+      - name: decimal
+      - name: decimal_huge_precision
+      - name: json
+      - name: union_simple
+      - name: float
+      - name: array_uinteger_4
+      - name: array_string_max_length
+      - name: struct_simple
+      - name: array_geometry
+      - name: array_struct_simple
+      - name: uinteger_4
+      - name: array_date
+      - name: _wayfare_created_at
+      - name: string_max_length
+      - name: string_min_length
+      - name: array_time
+      - name: geometry
+      - name: any
+      - name: datetime_without_timezone
+      - name: xml
+      - name: string_max_and_min_length
+      - name: string
+      - name: array_decimal
+      - name: integer_64
+      - name: geography
+      - name: case_variant_name
+      - name: integer_32
+      - name: decimal_precision
+      - name: uinteger_32
+      - name: array_boolean
+      - name: array_decimal_precision
+      - name: datetime_with_timezone
+      - name: array_string_allowed_values
+      - name: array_uinteger_32
+      - name: array_integer_4
+      - name: union_nested
+      - name: decimal_precision_scale
       - name: array_any
-  - name: dummy_model
-    columns:
-      - name: b
-      - name: a
+      - name: decimal_scale
+      - name: struct_all
+      - name: array_uinteger_64
+      - name: json_object
+      - name: array_union
+      - name: integer_16
+      - name: map_int_key
+      - name: array_decimal_precision_scale
+      - name: time
+      - name: array_integer_64
+      - name: array_string_max_and_min_length
+      - name: array_uinteger_8
+      - name: array_integer_16
+      - name: uinteger_16
+      - name: case_data_field_name
+      - name: array_decimal_scale
+      - name: array_datetime_without_timezone
+      - name: integer_4
+      - name: uinteger_64
+      - name: integer_8
+      - name: array_integer_8
+      - name: array_string
+      - name: string_allowed_values
+      - name: map_any
+      - name: uinteger_128
+      - name: array_map
+      - name: map
+      - name: struct_nested
   - name: cd_model
     columns:
       - name: a
+  - name: blns_model
+    columns:
+      - name: a
+  - name: dummy_model
+    columns:
+      - name: a
+      - name: b
