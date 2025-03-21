@@ -1,1 +1,1 @@
-select * from {{ source('new', 'blns_dataset') }}
+select * from {{ ref('dummy_model') }}
