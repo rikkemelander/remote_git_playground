@@ -18,4 +18,16 @@
 # and any added properties might be reordered.
 
 version: 2
-sources: []
+sources:
+  - database: warehouse
+    name: wayfare_unmanaged
+    description: Unmanaged sources in the warehouse
+    schema: existing_schema
+    tables:
+      - name: training_courses
+        description: ""
+        columns:
+          - name: course_id
+          - name: course_name
+          - name: department
+          - name: scheduled_date
